@@ -1,5 +1,4 @@
 # mapp
-Camera2 API Preview
 
 Camera2 API preview example
 
