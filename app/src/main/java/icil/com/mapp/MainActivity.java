@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                         if(grantResult == PackageManager.PERMISSION_GRANTED) {
                             mCameraTextureView = (TextureView) findViewById(R.id.cameraTextureView);
                             mPreview = new Preview(mainActivity, mCameraTextureView);
+                            mPreview.openCamera();
                             Log.d(TAG,"mPreview set");
                         } else {
                             Toast.makeText(this,"Should have camera permission to run", Toast.LENGTH_LONG).show();
